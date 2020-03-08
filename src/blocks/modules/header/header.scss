@@ -1,6 +1,6 @@
 .header {
-    padding: 61px 0 0 0;
-    background: url('/img/header_bg.png') no-repeat center;
+    padding: 61px 0 68px 0;
+    background: url("/img/header_bg.png") no-repeat center;
     &__items {
         display: flex;
         align-items: center;
@@ -9,7 +9,7 @@
     &__logo {
         margin-right: 135px;
         color: #ffffff;
-        font-family: "Open Sans Extrabold";
+        font-family: "Open Sans Extrabold", sans-serif;
         font-size: 18px;
         font-weight: 400;
         text-transform: uppercase;
@@ -27,7 +27,7 @@
     &__phone {
         margin-right: 35px;
         color: #ffffff;
-        font-family: "Open Sans";
+        font-family: "Open Sans", sans-serif;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
@@ -38,31 +38,64 @@
     &__callback-btn {
         min-width: 165px;
         height: 34px;
+        border: 2px solid #ffffff;
         padding: 5px 10px;
         color: #ffffff;
-        font-family: "Open Sans Extrabold";
+        font-family: "Open Sans Extrabold", sans-serif;
         font-size: 11px;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.55px;
         background: none;
         border-radius: 17px;
-        border: 2px solid #ffffff;
     }
     &__content {
         display: flex;
     }
     &__img {
+        position: relative;
+        top: -11px;
+        left: -108px;
         width: 647px;
+    }
+    &__desc {
+        padding-top: 42px;
     }
     &__slogan {
         width: 374px;
+        margin-bottom: 35px;
         color: #ffffff;
-        font-family: "Muller Extra Bold";
+        font-family: "Muller Extra Bold", sans-serif;
         font-size: 60px;
         line-height: 75px;
         text-transform: uppercase;
         letter-spacing: 1.76px;
+    }
+    &__title {
+        width: 427px;
+        padding-bottom: 75px;
+        color: #ffffff;
+        font-family: "Muller Medium", sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 400;
+    }
+    &__btn-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 119px;
+    }
+    &__button {
+        margin-right: 29px;
+    }
+    &__text {
+        width: 207px;
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
     }
 }
 
@@ -74,7 +107,7 @@
     }
     &__link {
         color: #ffffff;
-        font-family: "Open Sans Semibold";
+        font-family: "Open Sans Semibold", sans-serif;
         font-size: 13px;
         font-weight: 400;
         text-transform: uppercase;
@@ -82,4 +115,12 @@
         line-height: 13px;
         text-decoration: none;
     }
+}
+
+.mouse {
+    display: block;
+    width: 19px;
+    height: 31px;
+    margin: 0 auto;
+    background: url("/img/svg/mouse.svg") no-repeat center;
 }
