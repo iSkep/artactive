@@ -11,4 +11,12 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
+    transition: all 0.2s ease-in;
+    &:hover {
+        background-color: $white;
+        color: $pink;
+    }
+    &:focus {
+        outline: none;
+    }
 }

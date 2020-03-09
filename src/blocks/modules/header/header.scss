@@ -8,7 +8,7 @@
     }
     &__logo {
         margin-right: 135px;
-        color: #ffffff;
+        color: $white;
         font-family: "Open Sans Extrabold", sans-serif;
         font-size: 18px;
         font-weight: 400;
@@ -26,7 +26,7 @@
     }
     &__phone {
         margin-right: 35px;
-        color: #ffffff;
+        color: $white;
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
         font-weight: 700;
@@ -38,9 +38,9 @@
     &__callback-btn {
         min-width: 165px;
         height: 34px;
-        border: 2px solid #ffffff;
+        border: 2px solid $white;
         padding: 5px 10px;
-        color: #ffffff;
+        color: $white;
         font-family: "Open Sans Extrabold", sans-serif;
         font-size: 11px;
         font-weight: 400;
@@ -48,6 +48,14 @@
         letter-spacing: 0.55px;
         background: none;
         border-radius: 17px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+            background: $pink;
+        }
+        &:focus {
+            outline: none;
+        }
     }
     &__content {
         display: flex;
@@ -64,7 +72,7 @@
     &__slogan {
         width: 374px;
         margin-bottom: 35px;
-        color: #ffffff;
+        color: $white;
         font-family: "Muller Extra Bold", sans-serif;
         font-size: 60px;
         line-height: 75px;
@@ -74,7 +82,7 @@
     &__title {
         width: 427px;
         padding-bottom: 75px;
-        color: #ffffff;
+        color: $white;
         font-family: "Muller Medium", sans-serif;
         font-size: 32px;
         line-height: 38px;
@@ -91,7 +99,7 @@
     }
     &__text {
         width: 207px;
-        color: #ffffff;
+        color: $white;
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
         line-height: 20px;
@@ -106,7 +114,7 @@
         list-style: none;
     }
     &__link {
-        color: #ffffff;
+        color: $white;
         font-family: "Open Sans Semibold", sans-serif;
         font-size: 13px;
         font-weight: 400;
@@ -114,6 +122,10 @@
         letter-spacing: 0.65px;
         line-height: 13px;
         text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $pink;
+        }
     }
 }
 
