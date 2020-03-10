@@ -13,8 +13,7 @@
     cursor: pointer;
     transition: all 0.2s ease-in;
     &:hover {
-        background-color: $white;
-        color: $pink;
+        box-shadow: 3px 3px 18px $pink;
     }
     &:focus {
         outline: none;

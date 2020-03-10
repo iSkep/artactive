@@ -1,4 +1,6 @@
 .about {
+    position: relative;
+    background: url("/img/lines_bg.png") no-repeat center;
     padding: 108px 0 150px 0;
     &__wrapper {
         display: flex;
@@ -21,5 +23,14 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -67px;
+        left: 50%;
+        width: 11px;
+        height: 130px;
+        background: url("/img/svg/lines.svg") no-repeat center;
     }
 }
