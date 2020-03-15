@@ -5,7 +5,7 @@
         display: flex;
     }
     &__content {
-        flex-basis: 50%;
+        width: 570px;
     }
     &__title {
         margin-bottom: 85px;
@@ -33,6 +33,7 @@
     }
     &__slider {
         flex-basis: 50%;
+        overflow: hidden;
     }
 }
 
