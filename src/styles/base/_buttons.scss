@@ -19,3 +19,25 @@
         outline: none;
     }
 }
+
+.slick-prev,
+.slick-next {
+    padding: 0;
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    bottom: 0;
+}
+
+.slick-next {
+    left: 135px;
+    bottom: 0;
+}
