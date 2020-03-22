@@ -21,8 +21,24 @@
                 </div>
             </div>
             <div class="services__slider">
-                <div class="services__slider-img"><img src="/img/banner.png" alt=""></div>
-                <div class="services__slider-img"><img src="/img/banner-2.png" alt=""></div>
+                <div class="services__slider-img">
+                    <picture>
+                        <source media="(max-width: 575.98px)" srcset="img/banner_mobile.png">
+                        <source media="(max-width: 991.98px)" srcset="img/banner_tablet.png">
+                        <source srcset="img/banner_desktop.png">
+                        <img src="img/banner-2_desktop.png" alt="Реклама Miller">
+                    </picture>
+                    <div class="services__slider-desc">Растяжка на ул. Ленина</div>
+                </div>
+                <div class="services__slider-img">
+                    <picture>
+                        <source media="(max-width: 575.98px)" srcset="img/banner-2_mobile.png">
+                        <source media="(max-width: 991.98px)" srcset="img/banner-2_tablet.png">
+                        <source srcset="img/banner-2_desktop.png">
+                        <img src="img/banner-2_desktop.png" alt="Улица в Нью-Йорке">
+                    </picture>
+                    <div class="services__slider-desc">Нью-Йорк</div>
+                </div>
             </div>
         </div>
     </div>
