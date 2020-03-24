@@ -11,9 +11,7 @@
         margin-bottom: 85px;
     }
     &__subtitle {
-        position: relative;
         margin-bottom: 46px;
-        z-index: 10;
         &::before {
             content: "1";
             position: absolute;

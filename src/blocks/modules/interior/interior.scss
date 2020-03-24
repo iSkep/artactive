@@ -1,0 +1,46 @@
+.interior {
+    position: relative;
+    padding: 133px 0 570px 0;
+    background: url("/img/interior-bg_desktop.png") no-repeat calc(50% - 190px) calc(50% + 15px);
+    &__wrapper {
+        display: flex;
+    }
+    &__content {
+        margin-left: auto;
+    }
+    &__subtitle {
+        margin-bottom: 50px;
+        &::before {
+            content: "2";
+            position: absolute;
+            z-index: -1;
+            top: 21px;
+            left: -79px;
+            width: 113px;
+            height: 140px;
+            text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+            color: #ffffff;
+            font-family: "Muller Heavy", sans-serif;
+            font-size: 200px;
+            font-weight: 400;
+        }
+    }
+    &__desc {
+        width: 548px;
+        margin-bottom: 60px;
+        color: #5e606a;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        bottom: -67px;
+        left: 50%;
+        width: 11px;
+        height: 130px;
+        background: url("/img/svg/lines.svg") no-repeat center;
+    }
+}
