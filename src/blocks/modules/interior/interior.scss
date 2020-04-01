@@ -1,7 +1,8 @@
 .interior {
     position: relative;
     padding: 133px 0 570px 0;
-    background: url("/img/interior-bg_desktop.png") no-repeat calc(50% - 190px) calc(50% + 15px);
+    background: url("/img/interior-bg_desktop.png") no-repeat calc(50% - 190px) calc(50% + 15px),
+        url("/img/lines_bg.png") no-repeat center;
     &__wrapper {
         display: flex;
     }
