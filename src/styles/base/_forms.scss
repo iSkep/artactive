@@ -5,6 +5,9 @@
         font-size: 16px;
         font-family: "Open Sans Italic", sans-serif;
         line-height: 16px;
+        &_white {
+            color: #fff;
+        }
     }
     &__subheader {
         margin-bottom: 29px;
@@ -13,13 +16,16 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 20px;
+        &_white {
+            color: #fff;
+        }
     }
     &__item {
         width: 241px;
         padding: 7px 14px 7px 14px;
         margin-right: 40px;
         color: #383d52;
-        background-color: #faf8fb;
+        background-color: transparent;
         font-size: 14px;
         line-height: 24px;
         border: none;
@@ -27,6 +33,9 @@
         border-bottom: 1px solid #cccccc;
         &:focus {
             outline: none;
+        }
+        &_white {
+            color: #fff;
         }
     }
 }
