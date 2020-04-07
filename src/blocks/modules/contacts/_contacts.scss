@@ -51,9 +51,9 @@
         &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: 2px;
             left: -26px;
-            width: 11px;
+            width: 14px;
             height: 17px;
             background: url("/img/svg/icon-letter.svg") no-repeat center;
         }
@@ -67,11 +67,11 @@
         &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: -2px;
             left: -26px;
-            width: 11px;
+            width: 20px;
             height: 17px;
-            background: url("/img/svg/icon-phone.svg") no-repeat center;
+            background: url("/img/svg/icon-phone.svg") no-repeat center/cover;
         }
         &:hover {
             text-decoration: underline;
