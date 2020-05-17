@@ -1,0 +1,64 @@
+.overlay {
+    display: none;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 363px;
+    height: 369px;
+    padding: 45px 60px 50px 60px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+    background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%);
+    background-color: #883eca;
+    &__feed-form {
+        @include input-placeholder {
+            color: #fff;
+        }
+    }
+    &__close {
+        box-sizing: content-box;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 17px;
+        height: 17px;
+        padding: 10px;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 9px;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 9px;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            transform: rotate(-45deg);
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 196px;
+    }
+}
