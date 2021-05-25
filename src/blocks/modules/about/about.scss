@@ -2,6 +2,9 @@
     position: relative;
     background: url("/img/lines_bg.png") no-repeat center;
     padding: 108px 0 150px 0;
+    @media (max-width: 1169px) {
+        padding: 52px 0 150px 0;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;

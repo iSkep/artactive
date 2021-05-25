@@ -10,7 +10,7 @@
         margin-bottom: 87px;
         @media (max-width: 1169px) {
             justify-content: space-between;
-            padding: 0 15px;
+            margin-bottom: 14px;
         }
     }
     &__logo {
@@ -34,50 +34,18 @@
             flex-direction: column;
             justify-content: start;
             position: fixed;
-            z-index: 20;
+            z-index: 99;
             top: 0;
             right: -100%;
             width: 300px;
             height: 100vh;
-            padding: 42px 25px 155px 68px;
+            overflow: auto;
+            padding: 41px 0 155px 0;
             background-color: #fff;
+            transition: all ease-in-out 0.3s;
             &_active {
                 right: 0;
             }
-        }
-    }
-    &__menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 484px;
-        list-style: none;
-        @media (max-width: 1169px) {
-            flex-direction: column;
-            align-items: start;
-            width: auto;
-            margin-bottom: 80px;
-        }
-    }
-    &__link {
-        color: $white;
-        font-family: "Open Sans Semibold", sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.65px;
-        line-height: 13px;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
-        @media (max-width: 1169px) {
-            line-height: 48px;
-            color: $grey;
-            &:hover {
-                color: $grey;
-            }
-        }
-        &:hover {
-            color: $pink;
         }
     }
     &__contacts {
@@ -88,10 +56,11 @@
             flex-direction: column;
             align-items: start;
             margin: 0;
+            padding: 0 0 0 68px;
         }
     }
     &__phone {
-        margin-right: 35px;
+        margin: 0 35px 0 0;
         color: $white;
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
@@ -101,7 +70,42 @@
         letter-spacing: 0.8px;
         line-height: 16px;
         @media (max-width: 1169px) {
+            margin: 0 0 31px 0;
             color: $grey;
+        }
+    }
+    &__close-btn {
+        box-sizing: content-box;
+        display: none;
+        position: absolute;
+        top: 27px;
+        right: 25px;
+        width: 16px;
+        height: 16px;
+        padding: 10px;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 8px;
+            width: 20px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background-color: #aeaeae;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 8px;
+            width: 20px;
+            height: 2px;
+            transform: rotate(45deg);
+            background-color: #aeaeae;
+        }
+        @media (max-width: 1169px) {
+            display: block;
         }
     }
     &__callback-btn {
@@ -135,18 +139,26 @@
     }
     &__content {
         display: flex;
+        align-items: flex-start;
     }
     &__img {
-        position: relative;
-        top: -11px;
-        left: -108px;
+        flex: 1 1 67%;
+        margin-top: -11px;
+        margin-left: -108px;
         width: 647px;
+        @media (max-width: 1169px) {
+            margin-left: -120px;
+            margin-top: -3px;
+        }
     }
     &__desc {
-        padding-top: 42px;
+        flex: 1 1 50%;
+        padding: 42px 0 0 20px;
+        @media (max-width: 1169px) {
+            padding: 38px 0 0 12px;
+        }
     }
     &__slogan {
-        width: 374px;
         margin-bottom: 35px;
         color: $white;
         font-family: "Muller Extra Bold", sans-serif;
@@ -155,13 +167,13 @@
         text-transform: uppercase;
         letter-spacing: 1.76px;
         @media (max-width: 1169px) {
-            font-size: 48px;
+            margin-bottom: 30px;
+            font-size: 45px;
             line-height: 54px;
             letter-spacing: 1.32px;
         }
     }
     &__title {
-        width: 427px;
         padding-bottom: 75px;
         color: $white;
         font-family: "Muller Medium", sans-serif;
@@ -169,6 +181,7 @@
         line-height: 38px;
         font-weight: 400;
         @media (max-width: 1169px) {
+            padding-bottom: 35px;
             font-size: 21px;
             line-height: 25px;
         }
@@ -176,15 +189,18 @@
     &__btn-wrap {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 119px;
         @media (max-width: 1169px) {
             flex-direction: column;
             align-items: start;
+            margin-bottom: 0;
         }
     }
     &__button {
-        margin-right: 29px;
+        margin: 0 29px 0 0;
+        @media (max-width: 1169px) {
+            margin: 0 0 25px 0;
+        }
     }
     &__text {
         width: 207px;
@@ -196,6 +212,7 @@
     }
     &__burger {
         display: none;
+        cursor: pointer;
         &::before {
             content: "";
             position: absolute;

@@ -3,12 +3,13 @@
         <div class="header__items">
             <div class="header__logo">Artactive</div>
             <nav class="header__nav">
-                <ul class="header__menu">
-                    <li><a class="header__link" href="#about">О нас</a></li>
-                    <li><a class="header__link" href="#services">Услуги</a></li>
-                    <li><a class="header__link" href="#reviews">Отзывы</a></li>
-                    <li><a class="header__link" href="#faq">Faq</a></li>
-                    <li><a class="header__link" href="#contacts">Контакты</a></li>
+                <div class="header__close-btn"></div>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#faq">Faq</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
                 </ul>
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+79201488131">+7 (920) 148 81 31</a>
@@ -21,7 +22,11 @@
         </div>
         <div class="header__content">
             <div class="header__img">
-                <img src="/img/header_img.png" alt="print formats">
+                <picture>
+                    <source media="(min-width: 1170px)" srcset="/img/header_img.png, /img/header_img@2x.png 2x">
+                    <source media="(min-width: 750px)" srcset="/img/header_img_tablet.png, /img/header_img@2x_tablet.png 2x">
+                    <img src="/img/header_img.png" alt="print formats">
+                </picture>
             </div>
             <div class="header__desc">
                 <div class="header__slogan">Размер<br>не имеет значения!</div>
@@ -32,6 +37,6 @@
                 </div>
             </div>
         </div>
-        <a class="header__mouse" href="#contacts""></a>
+        <a class="header__mouse" href="#about""></a>
     </div>
 </header>

@@ -1,10 +1,10 @@
-$(document).ready(function () {
-    $('.header__burger').on('click', function () {
-        //добавить скрытие бургера, или нет смысла, так как он и так под меню
+$(function () {
+    $('.header__burger, .menu__link, .header__close-btn').on('click', function () {
         $('.header__nav').toggleClass('header__nav_active');
+        $('body').toggleClass('scroll-lock');
     });
 
-    $('.header__link').on('click', function () {
-        $('.header__nav').toggleClass('header__nav_active');
+    $('.menu__link, .header__close-btn').on('click', function () {
+        $('.overlay').fadeOut('fast');
     });
-})
+});
