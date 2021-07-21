@@ -18,15 +18,20 @@ html {
 }
 
 body.scroll-lock {
-    overflow: hidden;
+    @media (max-width: 1199.98px) {
+        overflow: hidden;
+    }
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-    @media (max-width: 1169px) {
+    @media (max-width: 1199.98px) {
         max-width: 750px;
+    }
+    @media (max-width: 575.98px) {
+        max-width: 100%;
     }
 }
 
@@ -49,14 +54,14 @@ a,
     justify-content: space-between;
     width: 484px;
     list-style: none;
-    @media (max-width: 1169px) {
+    @media (max-width: 1199.98px) {
         flex-direction: column;
         align-items: start;
         width: auto;
         padding-bottom: 80px;
     }
     &__item {
-        @media (max-width: 1169px) {
+        @media (max-width: 1199.98px) {
             width: 100%;
             &:nth-child(1) {
                 width: 75%;
@@ -74,7 +79,7 @@ a,
         line-height: 13px;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
-        @media (max-width: 1169px) {
+        @media (max-width: 1199.98px) {
             padding: 0 0 0 68px;
             line-height: 48px;
             color: $grey;

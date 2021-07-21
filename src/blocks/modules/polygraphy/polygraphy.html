@@ -1,36 +1,42 @@
 <section class="polygraphy">
-    <div class="container">
-        <div class="polygraphy__content">
-            <h3 class="subtitle polygraphy__subtitle">Оперативная полиграфия —<br>от визитки до баннера</h3>
-            <div class="polygraphy__desc">
-                <p class="polygraphy__text">
-                    Мы предлагаем клиентам широчайший выбор товаров в области полиграфии. У нас можно заказать любую полиграфическую продукцию, цена которой будет приемлемой: визитки, грамоты, дипломы, конверты, ценники, листовки, открытки, меню, календари, газеты и многое другое.
-                </p>
-                <p class="polygraphy__text">
-                    Мы воплотим в жизнь любые ваши идеи!
-                </p>
+    <div class="polygraphy__wrapper">
+        <div class="container">
+            <div class="polygraphy__content">
+                <div class="polygraphy__info">
+                    <h3 class="subtitle polygraphy__subtitle">Оперативная полиграфия — от визитки до баннера</h3>
+                    <div class="polygraphy__desc">
+                        <p class="polygraphy__text">
+                            Мы предлагаем клиентам широчайший выбор товаров в области полиграфии. У нас можно
+                            заказать любую полиграфическую продукцию, цена которой будет приемлемой: визитки, грамоты,
+                            дипломы, конверты, ценники, листовки, открытки, меню, календари, газеты и многое другое.
+                        </p>
+                        <p class="polygraphy__text">
+                            Мы воплотим в жизнь любые ваши идеи!
+                        </p>
+                    </div>
+                </div>
+                <picture class="polygraphy__image">
+                    <source media="(min-width: 1200px)" srcset="/img/style_desktop.png, /img/style@2x_desktop.png 2x">
+                    <source media="(min-width: 575.98px)" srcset="/img/style_tablet.png, /img/style@2x_tablet.png 2x">
+                    <source srcset="/img/style_mobile.png, /img/style@2x_mobile.png 2x">
+                    <img src="/img/style_desktop.png" alt="style">
+                </picture>
+                <form class="feed-form polygraphy__feed-form" action="#">
+                    <div class="feed-form__text">
+                        <div class="feed-form__header">Есть вопросы?</div>
+                        <div class="feed-form__subheader">Оставьте заявку на консультацию</div>
+                    </div>
+                    <div class="feed-form__wrapper">
+                        <div class="feed-form__item-wrap">
+                            <input class="feed-form__item" type="text" placeholder="Имя" name="name">
+                        </div>
+                        <div class="feed-form__item-wrap">
+                            <input class="feed-form__item" type="tel" placeholder="Телефон" name="phone">
+                        </div>
+                        <button class="button polygraphy__button">Отправить</button>
+                    </div>
+                </form>
             </div>
-            <form class="feed-form polygraphy__feed-form" action="#">
-                <div class="feed-form__text">
-                    <div class="feed-form__header">Есть вопросы?</div>
-                    <div class="feed-form__subheader">Оставьте заявку на консультацию</div>
-                </div>
-                <div class="feed-form__wrapper">
-                    <div class="feed-form__item-wrap">
-                        <input class="feed-form__item" type="text" placeholder="Имя" name="name">
-                    </div>
-                    <div class="feed-form__item-wrap">
-                        <input class="feed-form__item" type="tel" placeholder="Телефон" name="phone">
-                    </div>
-                    <button class="button">Отправить</button>
-                </div>
-            </form>
-            <picture class="polygraphy__image">
-                <source media="(max-width: 575.98px)" srcset="img/style_mobile.png">
-                <source media="(max-width: 991.98px)" srcset="img/style_tablet.png">
-                <source srcset="img/style_desktop.png">
-                <img src="img/style_desktop.png" alt="Форматы печати">
-            </picture>
         </div>
     </div>
 </section>

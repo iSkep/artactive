@@ -3,7 +3,7 @@
         <div class="services__wrapper">
             <div class="services__content">
                 <h2 class="title services__title">2. Услуги</h2>
-                <h3 class="subtitle services__subtitle">Широкоформатная печать<br>баннеров, растяжек, афиш</h3>
+                <h3 class="subtitle services__subtitle">Широкоформатная печать баннеров, растяжек, афиш</h3>
                 <ul class="services__list">
                     <li class="services__list-item">подготовка макетов к печати, дизайн рекламных баннеров</li>
                     <li class="services__list-item">срочная печать за 3 часа</li>
@@ -20,25 +20,35 @@
                     <button class="button" data-modal="consultation">Заказать</button>
                 </div>
             </div>
-            <div class="services__slider">
-                <div class="services__slider-img">
-                    <picture>
-                        <source media="(max-width: 575.98px)" srcset="img/banner_mobile.png">
-                        <source media="(max-width: 991.98px)" srcset="img/banner_tablet.png">
-                        <source srcset="img/banner_desktop.png">
-                        <img src="img/banner_desktop.png" alt="Реклама Miller">
-                    </picture>
-                    <div class="services__slider-desc">Растяжка на ул. Ленина</div>
+            <div class="services__slider-wrapper">
+                <div class="services__slider">
+                    <div class="services__slider-item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="/img/banner_desktop.png, /img/banner@2x_desktop.png 2x">
+                            <source media="(min-width: 575.98px)" srcset="/img/banner_tablet.png, /img/banner@2x_tablet.png 2x">
+                            <source srcset="/img/banner_mobile.png, /img/banner@2x_mobile.png 2x">
+                            <img class="services__slider-img" src="/img/banner_desktop.png" alt="Реклама Miller">
+                        </picture>
+                        <div class="services__slider-desc">Растяжка на ул. Ленина</div>
+                    </div>
+                    <div class="services__slider-item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="/img/banner-2_desktop.png, /img/banner-2@2x_desktop.png 2x">
+                            <source media="(min-width: 575.98px)" srcset="/img/banner-2_tablet.png, /img/banner-2@2x_tablet.png 2x">
+                            <source srcset="/img/banner-2_mobile.png, /img/banner-2@2x_mobile.png 2x">
+                            <img class="services__slider-img" src="/img/banner-2_desktop.png" alt="Улица в Нью-Йорке">
+                        </picture>
+                        <div class="services__slider-desc">Улицы Нью-Йорка</div>
+                    </div>
                 </div>
-                <div class="services__slider-img">
-                    <picture>
-                        <source media="(max-width: 575.98px)" srcset="img/banner-2_mobile.png">
-                        <source media="(max-width: 991.98px)" srcset="img/banner-2_tablet.png">
-                        <source srcset="img/banner-2_desktop.png">
-                        <img src="img/banner-2_desktop.png" alt="Улица в Нью-Йорке">
-                    </picture>
-                    <div class="services__slider-desc">Нью-Йорк</div>
+                <div class="services__arrows"></div>
+            </div>
+            <div class="services-questions services-questions__tablet">
+                <div class="services-questions__text">
+                    <div class="services-questions__header">Есть вопросы?</div>
+                    <div class="services-questions__subheader">Закажите консультацию</div>
                 </div>
+                <button class="button services__button" data-modal="consultation">Заказать</button>
             </div>
         </div>
     </div>

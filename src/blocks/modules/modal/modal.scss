@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba($color: #000000, $alpha: 0.4);
 }
 
@@ -15,14 +15,15 @@
     z-index: 100;
     top: 50%;
     left: 50%;
-    width: 363px;
-    height: 369px;
+    max-width: 360px;
     padding: 45px 60px 50px 60px;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
     background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%);
     background-color: #883eca;
+    @media (max-width: 575.98px) {
+    }
     &__feed-form {
         @include input-placeholder {
             color: #fff;
@@ -62,6 +63,5 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 196px;
     }
 }

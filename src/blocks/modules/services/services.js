@@ -10,7 +10,8 @@ $(document).ready(function () {
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        prevArrow: '<button type="button" class="slick-prev"><img src="../img/svg/arrow_left.svg" alt="left arrow"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/svg/arrow_right.svg" alt="right arrow"></button>',
+        appendArrows: $('.services__arrows'),
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
     });
 });
