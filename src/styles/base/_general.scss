@@ -18,7 +18,7 @@ html {
 }
 
 body.scroll-lock {
-    @media (max-width: 1199.98px) {
+    @media (max-width: 991.98px) {
         overflow: hidden;
     }
 }
@@ -27,7 +27,7 @@ body.scroll-lock {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-    @media (max-width: 1199.98px) {
+    @media (max-width: 991.98px) {
         max-width: 750px;
     }
     @media (max-width: 575.98px) {
@@ -52,24 +52,32 @@ a,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 484px;
     list-style: none;
-    @media (max-width: 1199.98px) {
+    @media (max-width: 991.98px) {
         flex-direction: column;
         align-items: start;
         width: auto;
-        padding-bottom: 80px;
+        padding-bottom: 76px;
     }
     &__item {
+        margin: 0 30px 0 0;
         @media (max-width: 1199.98px) {
+            margin: 0 10px 0 0;
+        }
+        @media (max-width: 991.98px) {
             width: 100%;
+            margin: 0;
             &:nth-child(1) {
                 width: 75%;
             }
         }
+        &:last-child {
+            margin: 0;
+        }
     }
     &__link {
         display: block;
+        padding: 10px;
         color: $white;
         font-family: "Open Sans Semibold", sans-serif;
         font-size: 13px;
@@ -79,7 +87,7 @@ a,
         line-height: 13px;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
-        @media (max-width: 1199.98px) {
+        @media (max-width: 991.98px) {
             padding: 0 0 0 68px;
             line-height: 48px;
             color: $grey;
@@ -89,6 +97,68 @@ a,
         }
         &:hover {
             color: $pink;
+        }
+    }
+}
+
+.callback {
+    display: flex;
+    align-items: center;
+    @media (max-width: 991.98px) {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        padding: 0 0 0 68px;
+    }
+    &__phone {
+        margin: 0 35px 0 0;
+        color: $white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.8px;
+        line-height: 1.5;
+        @media (max-width: 991.98px) {
+            margin: 0 0 31px 0;
+            color: $grey;
+        }
+    }
+    &__button {
+        min-width: 165px;
+        height: 34px;
+        border: 2px solid $white;
+        padding: 5px 10px;
+        color: $white;
+        font-family: "Open Sans Extrabold", sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.55px;
+        background: none;
+        border-radius: 17px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        @media (max-width: 991.98px) {
+            border: 2px solid $pink;
+            color: $pink;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+        &:hover {
+            box-shadow: 1px 1px 10px 0 #fff;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__burger {
+        display: none;
+        @media (max-width: 991.98px) {
+            display: flex;
         }
     }
 }

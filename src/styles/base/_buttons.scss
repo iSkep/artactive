@@ -16,7 +16,7 @@
     transition: all 0.1s ease-in;
     &:hover {
         box-shadow: 3px 3px 18px $pink;
-        @media (max-width: 1199.98px) {
+        @media (max-width: 991.98px) {
             box-shadow: none;
         }
     }

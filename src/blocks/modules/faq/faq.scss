@@ -2,7 +2,7 @@
     position: relative;
     padding: 20px 0 170px 0;
     background: url("/img/lines_bg.png") no-repeat center;
-    @media (max-width: 1199.98px) {
+    @media (max-width: 991.98px) {
         padding: 20px 0 100px 0;
     }
     @media (max-width: 575.98px) {
@@ -30,7 +30,7 @@
         max-width: 48%;
         margin-bottom: 45px;
         list-style: none;
-        @media (max-width: 1199.98px) {
+        @media (max-width: 991.98px) {
             flex: 1 1 100%;
             max-width: 100%;
             &:nth-child(1) {
@@ -57,7 +57,7 @@
         }
         &:last-child {
             margin-bottom: 65px;
-            @media (max-width: 1199.98px) {
+            @media (max-width: 991.98px) {
                 margin-bottom: 55px;
             }
         }
@@ -81,12 +81,12 @@
             color: #fff;
         }
         width: 100%;
-        padding: 45px 68px 17px 311px;
+        padding: 45px 10px 17px 311px;
         background: url("/img/question.png") no-repeat 30px center,
             #883eca url("/img/svg/form_bg.svg") no-repeat center right;
         border-radius: 10px;
         box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
-        @media (max-width: 1199.98px) {
+        @media (max-width: 991.98px) {
             padding: 45px 31px 20px 36px;
             background: url("/img/question.png") no-repeat calc(100% + 30px) -60px,
                 #883eca url("/img/svg/form_bg.svg") no-repeat 475px 5px;
