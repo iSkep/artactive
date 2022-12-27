@@ -1,10 +1,10 @@
-**Gulp**  
-**Webpack**  
-**HTML5**  
-**SCSS**  
-**JavaScript**  
-**Slick Slider**  
-
+# [ARTACTIVE](https://artactive-skep.netlify.app/) | Landing Page
+## 🐱‍💻 Tech stack
+* HTML, CSS, SCSS
+* JavaScript
+* Gulp, Webpack
+* BEM
+* Slick Slider
 
 # gulp-scss-starter
 ## :fire: Особенности
