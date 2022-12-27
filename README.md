@@ -1,7 +1,7 @@
 # [ARTACTIVE](https://artactive-skep.netlify.app/) | Landing Page
 ## 🐱‍💻 Tech stack
 * HTML, CSS, SCSS
-* JavaScript
+* jQuery
 * Gulp, Webpack
 * BEM
 * Slick Slider
